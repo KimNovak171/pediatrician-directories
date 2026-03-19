@@ -16,29 +16,29 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://autorepairdirectories.com"),
+  metadataBase: new URL("https://SpeechTherapistDirectories.com"),
   title: {
-    default: "AutoRepairDirectories.com | Auto Repair Shop Directory",
-    template: "%s | AutoRepairDirectories.com",
+    default: "SpeechTherapistDirectories.com | Speech Therapist Directory",
+    template: "%s | SpeechTherapistDirectories.com",
   },
   description:
-    "AutoRepairDirectories.com is a professional, easy-to-use auto repair directory helping drivers compare local auto repair shops and services across the United States and Canada.",
+    "SpeechTherapistDirectories.com is a professional, easy-to-use Speech Therapy directory helping families find local speech pathologists and services across the United States and Canada.",
   alternates: {
     canonical: "/",
   },
   openGraph: {
-    title: "AutoRepairDirectories.com | Auto Repair Shop Directory",
+    title: "SpeechTherapistDirectories.com | Speech Therapist Directory",
     description:
-      "Trusted resource to explore and compare auto repair shops and services across North America.",
+      "Trusted resource to explore and compare speech pathologists and services across North America.",
     url: "/",
-    siteName: "AutoRepairDirectories.com",
+    siteName: "SpeechTherapistDirectories.com",
     type: "website",
     images: [
       {
         url: "/og-image.svg",
         width: 1200,
         height: 630,
-        alt: "AutoRepairDirectories.com logo preview",
+        alt: "SpeechTherapistDirectories.com logo preview",
       },
     ],
   },
@@ -57,20 +57,21 @@ export default async function RootLayout({
   return (
     <html lang="en">
       <head>
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8586688641645596" crossorigin="anonymous"></script>
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <div className="flex min-h-screen flex-col bg-background text-foreground">
-          <header className="w-full border-b-[3px] border-gold bg-navy text-white">
+          <header className="w-full border-b-[3px] border-gold bg-cyan-700 text-white">
             <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
               <div className="flex items-center gap-6">
                 <Link
                   href="/"
                   className="text-[11px] font-bold tracking-[0.28em] sm:text-xs text-white hover:text-gold-soft transition-colors"
-                  aria-label="AutoRepairDirectories.com – go to homepage"
+                  aria-label="SpeechTherapistDirectories.com – go to homepage"
                 >
-                  AUTOREPAIRDIRECTORIES.COM
+                  SpeechTherapistDirectories.com
                 </Link>
                 <nav className="flex items-center gap-4" aria-label="Main navigation">
                   <Link
@@ -100,7 +101,7 @@ export default async function RootLayout({
                 </nav>
               </div>
               <p className="ml-4 hidden max-w-xs text-right text-xs text-gold-soft sm:block">
-                Trusted auto repair directory for car owners and shop teams.
+                Trusted Speech Therapist directory for families and caregivers.
               </p>
             </div>
           </header>
@@ -180,7 +181,7 @@ export default async function RootLayout({
           <footer className="w-full border-t border-navy/10 bg-background">
             <div className="mx-auto flex max-w-6xl flex-col gap-4 px-4 py-5 text-xs text-foreground/80 sm:px-6 lg:px-8">
               <p>
-                © {new Date().getFullYear()} AutoRepairDirectories.com. For
+                © {new Date().getFullYear()} SpeechTherapistDirectories.com. For
                 informational purposes only – always verify licensing,
                 certifications, and safety requirements with your local authority.
               </p>
@@ -198,7 +199,7 @@ export default async function RootLayout({
                   Advertise
                 </Link>
                 <Link href="/advertise" className="hover:text-gold">
-                  For Auto Repair Shops
+                  For speech pathologists
                 </Link>
                 <Link href="/advertise" className="hover:text-gold">
                   Featured Listing

@@ -2,19 +2,19 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | Auto Repair Directories",
+  title: "Privacy Policy | Speech Therapy Directories",
   description:
-    "Privacy policy for AutoRepairDirectories.com. How we collect, use, and protect your information when you use our auto repair directory.",
+    "Privacy policy for SpeechTherapyDirectories.com. How we collect, use, and protect your information when you use our speech therapy directory.",
   alternates: {
     canonical: "/privacy",
     languages: {
-      "en-us": "https://autorepairdirectories.com/privacy",
+      "en-us": "https://speechtherapydirectories.com/privacy",
     },
   },
   openGraph: {
-    title: "Privacy Policy | Auto Repair Directories",
+    title: "Privacy Policy | Speech Therapy Directories",
     url: "/privacy",
-    siteName: "AutoRepairDirectories.com",
+    siteName: "SpeechTherapyDirectories.com",
     type: "website",
   },
 };
@@ -38,7 +38,7 @@ export default function PrivacyPage() {
         <section className="space-y-4 text-sm text-slate-700">
           <h2 className="text-lg font-semibold text-navy">1. Introduction</h2>
           <p>
-            AutoRepairDirectories.com (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;) operates a directory website that helps drivers find and compare auto repair shops across the United States and Canada. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website.
+            SpeechTherapyDirectories.com (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;) operates a directory website that helps caregivers find and compare speech therapy practices across the United States and Canada. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website.
           </p>
 
           <h2 className="text-lg font-semibold text-navy">2. Information We Collect</h2>
@@ -53,7 +53,7 @@ export default function PrivacyPage() {
 
           <h2 className="text-lg font-semibold text-navy">4. Directory Listings and Public Information</h2>
           <p>
-            Our directory displays information about auto repair shops that we obtain from public sources (such as Google Maps) or that is provided by shop owners. Listing details (e.g., name, address, phone, website) are shown to help users compare options. If you are a shop owner and wish to update or remove your listing, contact us at support@autorepairdirectories.com.
+            Our directory displays information about speech therapy practices that we obtain from public sources (such as Google Maps) or that is provided by practice owners. Listing details (e.g., name, address, phone, website) are shown to help users compare options. If you are a practice owner and wish to update or remove your listing, contact us at support@speechtherapydirectories.com.
           </p>
 
           <h2 className="text-lg font-semibold text-navy">5. Cookies and Tracking</h2>
@@ -73,7 +73,7 @@ export default function PrivacyPage() {
 
           <h2 className="text-lg font-semibold text-navy">8. Your Rights and Choices</h2>
           <p>
-            Depending on your location, you may have the right to access, correct, or delete your personal information, or to object to or restrict certain processing. To exercise these rights or ask questions about your data, contact us at support@autorepairdirectories.com.
+            Depending on your location, you may have the right to access, correct, or delete your personal information, or to object to or restrict certain processing. To exercise these rights or ask questions about your data, contact us at support@speechtherapydirectories.com.
           </p>
 
           <h2 className="text-lg font-semibold text-navy">9. Children&apos;s Privacy</h2>
@@ -89,8 +89,8 @@ export default function PrivacyPage() {
           <h2 className="text-lg font-semibold text-navy">11. Contact Us</h2>
           <p>
             For questions about this Privacy Policy or our practices, contact us at{" "}
-            <a href="mailto:support@autorepairdirectories.com" className="text-teal hover:underline">
-              support@autorepairdirectories.com
+            <a href="mailto:support@speechtherapydirectories.com" className="text-teal hover:underline">
+              support@speechtherapydirectories.com
             </a>
             .
           </p>

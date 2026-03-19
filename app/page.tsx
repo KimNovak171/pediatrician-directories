@@ -6,26 +6,26 @@ import { getDirectoryIndex, getStateSummary, getGlobalStats } from "@/lib/stateF
 
 export const metadata: Metadata = {
   title:
-    "Auto Repair Shop Directory USA & Canada | Verified Auto Repair Shops",
+    "speech pathologist Directory USA & Canada | Verified speech pathologists",
   description:
-    "Browse verified auto repair shops across the US and Canada. Brake repair, engine service, transmission work, tire service and more — all rated 3 stars or higher on Google Maps.",
+    "Browse verified speech pathologists across the US and Canada. Speech evaluation, language support, fluency therapy, feeding support and more — all rated 3 stars or higher on Google Maps.",
   alternates: {
     canonical: "/",
   },
   openGraph: {
     title:
-      "Auto Repair Shop Directory USA & Canada | Verified Auto Repair Shops",
+      "speech pathologist Directory USA & Canada | Verified speech pathologists",
     description:
-      "Browse verified auto repair shops across the US and Canada. Brake repair, engine service, transmission work and more — all rated 3 stars or higher on Google Maps.",
+      "Browse verified speech pathologists across the US and Canada. speech evaluations, articulation therapy, language support, and more — all rated 3 stars or higher on Google Maps.",
     url: "/",
-    siteName: "AutoRepairDirectories.com",
+    siteName: "speechtherapydirectories.com",
     type: "website",
     images: [
       {
         url: "/og-image.svg",
         width: 1200,
         height: 630,
-        alt: "AutoRepairDirectories.com homepage preview",
+        alt: "speechtherapydirectories.com homepage preview",
       },
     ],
   },
@@ -51,8 +51,8 @@ export default async function Home() {
       {
         "@type": "ListItem",
         position: 1,
-        name: "AutoRepairDirectories.com",
-        item: "https://autorepairdirectories.com/",
+        name: "speechtherapydirectories.com",
+        item: "https://speechtherapydirectories.com/",
       },
     ],
   };
@@ -67,14 +67,14 @@ export default async function Home() {
         <div className="mx-auto flex max-w-6xl flex-col gap-10 px-4 py-12 sm:px-6 lg:py-16 lg:px-8">
           <div className="space-y-6 text-surface">
             <p className="inline-flex rounded-full bg-navy-soft/80 px-3 py-1 text-xs font-medium uppercase tracking-[0.2em] text-gold-soft ring-1 ring-gold-soft/40">
-              Auto Repair Directories
+              speech therapy Directories
             </p>
             <h1 className="text-balance text-3xl font-semibold leading-tight sm:text-4xl lg:text-5xl">
-              Find Trusted Auto Repair Shops — State by State
+              Find Trusted speech pathologists — State by State
             </h1>
             <p className="max-w-2xl text-balance text-sm sm:text-base text-surface/80">
-              Verified auto repair shops and services across the US and
-              Canada. Every shop rated 3★ or higher on Google Maps.
+              Verified speech pathologists and services across the US and
+              Canada. Every practice rated 3★ or higher on Google Maps.
             </p>
           </div>
 
@@ -83,7 +83,7 @@ export default async function Home() {
               Start with a state directory
             </h2>
             <p className="mt-2 text-sm text-white/90">
-              Browse verified auto repair shops by state, then drill down by
+              Browse verified speech pathologists by state, then drill down by
               city to compare services and contact details.
             </p>
 
@@ -99,7 +99,7 @@ export default async function Home() {
                 >
                   <p className="text-lg font-semibold">{state.stateName}</p>
                   <p className="mt-1 text-sm text-gold-soft">
-                    {state.stateName} — {state.totalFacilities.toLocaleString()} shops
+                    {state.stateName} — {state.totalFacilities.toLocaleString()} practices
                   </p>
                 </Link>
               ))}
@@ -107,7 +107,7 @@ export default async function Home() {
 
             <p className="mt-4 text-sm font-medium text-white">
               Each state has its own dedicated directory — specific
-              shops, specific cities, built for that state only.
+              practices, specific cities, built for that state only.
             </p>
           </div>
         </div>
@@ -115,10 +115,10 @@ export default async function Home() {
 
       <section className="mx-auto max-w-6xl px-4 pt-8 sm:px-6 lg:px-8">
         <h2 className="text-2xl font-semibold text-navy">
-          Canadian Auto Repair Shop Directories
+          Canadian speech pathologist Directories
         </h2>
         <p className="mt-2 text-sm text-slate-600">
-          Browse verified auto repair shops by Canadian province. Same
+          Browse verified speech pathologists by Canadian province. Same
           directory experience — province by province, then by city.
         </p>
         <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
@@ -130,7 +130,7 @@ export default async function Home() {
             >
               <p className="text-lg font-semibold">{item.provinceName}</p>
               <p className="mt-1 text-sm text-gold-soft">
-                {item.provinceName} — {item.totalFacilities.toLocaleString()} shops
+                {item.provinceName} — {item.totalFacilities.toLocaleString()} practices
               </p>
             </Link>
           ))}
@@ -146,11 +146,11 @@ export default async function Home() {
         return (
           <section className="mx-auto max-w-6xl rounded-2xl border-2 border-teal/20 bg-teal/5 px-4 py-10 sm:px-6 lg:px-8">
             <h2 className="text-xl font-semibold text-navy">
-              Featured Auto Repair Shops
+              Featured speech pathologists
             </h2>
             <p className="mt-1 text-sm text-slate-600">
-              Selected shops across our directories — verified listings for
-              car owners comparing repair options.
+              Selected practices across our directories — verified listings for
+              families comparing repair options.
             </p>
             <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
               {allFeatured.map((facility) => (
@@ -162,19 +162,19 @@ export default async function Home() {
       })()}
 
       <p className="mx-auto max-w-2xl rounded-lg border-2 border-teal/40 bg-teal/10 px-4 py-3 text-center text-sm text-slate-700">
-        Auto shop owners: Get featured at the top of your city listing.{" "}
+        Auto practice owners: Get featured at the top of your city listing.{" "}
         <Link
           href="/advertise"
           className="font-medium text-teal underline underline-offset-2 hover:text-teal-soft"
         >
-          Learn about featured shop placement
+          Learn about featured practice placement
         </Link>{" "}
         or contact{" "}
         <a
-          href="mailto:support@autorepairdirectories.com"
+          href="mailto:support@speechtherapydirectories.com"
           className="font-medium text-teal underline underline-offset-2 hover:text-teal-soft"
         >
-          support@autorepairdirectories.com
+          support@speechtherapydirectories.com
         </a>
         .
       </p>
@@ -183,7 +183,7 @@ export default async function Home() {
         <div className="mx-auto grid max-w-6xl gap-4 px-4 py-8 sm:grid-cols-2 sm:px-6 lg:grid-cols-4 lg:px-8">
           <div className="rounded-xl border-2 border-teal/30 bg-surface p-4 text-center shadow-sm">
             <p className="text-xs font-semibold uppercase tracking-wide text-teal">
-              Verified Auto Repair Shops
+              Verified speech pathologists
             </p>
             <p className="mt-2 text-2xl font-semibold text-navy">
               {globalStats.totalFacilities.toLocaleString()}
@@ -251,11 +251,11 @@ export default async function Home() {
                 3️⃣
               </p>
               <h3 className="mt-3 text-lg font-semibold text-navy">
-                Contact auto repair shops directly
+                Contact speech pathologists directly
               </h3>
               <p className="mt-2 text-sm text-slate-600">
                 Use website and maps links to verify details and contact
-                shops.
+                practices.
               </p>
             </div>
           </div>
@@ -273,7 +273,7 @@ export default async function Home() {
                 Google Verified Data
               </h3>
               <p className="mt-2 text-sm text-slate-600">
-                All shops sourced from Google Maps with real ratings and
+                All practices sourced from Google Maps with real ratings and
                 reviews.
               </p>
             </article>
@@ -291,7 +291,7 @@ export default async function Home() {
               </h3>
               <p className="mt-2 text-sm text-slate-600">
                 No signup required, no spam, just helpful information for
-                car owners.
+                families.
               </p>
             </article>
           </div>
@@ -302,10 +302,10 @@ export default async function Home() {
         <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6 lg:px-8">
           <div className="rounded-2xl border border-gold/50 bg-surface-muted p-6 text-foreground ring-1 ring-gold/30">
             <h2 className="text-2xl font-semibold text-gold-soft">
-              Are You an Auto Repair Shop Owner?
+              Are You an speech pathologist Owner?
             </h2>
             <p className="mt-3 max-w-3xl text-sm text-foreground/90">
-              Get your shop seen by drivers actively searching for auto repair
+              Get your practice seen by caregivers actively searching for speech therapy
               options in your city. Featured listings available.
             </p>
             <div className="mt-5">

@@ -2,34 +2,34 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Advertise | Get Your Auto Repair Shop in Front of Drivers",
+  title: "Advertise | Get Your Speech Therapy Practice in Front of Families",
   description:
-    "Featured and premium listings on AutoRepairDirectories.com. Reach drivers actively searching for auto repair shops and services across the United States.",
+    "Featured and premium listings on SpeechTherapistDirectories.com. Reach Families actively searching for Speech Therapy Practices and services across the United States.",
   alternates: {
     canonical: "/advertise",
     languages: {
-      "en-us": "https://autorepairdirectories.com/advertise",
+      "en-us": "https://SpeechTherapistDirectories.com/advertise",
     },
   },
   openGraph: {
-    title: "Advertise | Get Your Auto Repair Shop in Front of Drivers",
+    title: "Advertise | Get Your Speech Therapy Practice in Front of Families",
     description:
-      "A featured listing puts your shop at the top of your city section and in front of high-intent visitors at the moment they are choosing an auto repair service.",
+      "A featured listing puts your practice at the top of your city section and in front of high-intent visitors at the moment they are choosing a speech therapy/pathology service.",
     url: "/advertise",
-    siteName: "AutoRepairDirectories.com",
+    siteName: "SpeechTherapistDirectories.com",
     type: "website",
     images: [
       {
         url: "/og-image.svg",
         width: 1200,
         height: 630,
-        alt: "AutoRepairDirectories.com advertise page preview",
+        alt: "SpeechTherapistDirectories.com advertise page preview",
       },
     ],
   },
 };
 
-const siteUrl = "https://autorepairdirectories.com";
+const siteUrl = "https://SpeechTherapistDirectories.com";
 const STRIPE_LINK_49 = "https://buy.stripe.com/28E00jb2q2jlgsC2f7fAc00";
 const STRIPE_LINK_99 = "https://buy.stripe.com/eVq5kD4E2cXZfoy4nffAc01";
 
@@ -41,7 +41,7 @@ export default function AdvertisePage() {
       {
         "@type": "ListItem",
         position: 1,
-        name: "AutoRepairDirectories.com",
+        name: "SpeechTherapistDirectories.com",
         item: `${siteUrl}/`,
       },
       {
@@ -62,16 +62,16 @@ export default function AdvertisePage() {
 
       <header className="space-y-3">
         <p className="text-xs font-semibold uppercase tracking-[0.2em] text-teal">
-          For Auto Repair Shop Owners
+          For Speech Therapy Practice Owners
         </p>
         <h1 className="text-3xl font-semibold text-navy sm:text-4xl">
-          Get Your Shop in Front of Drivers Who Are Ready to Choose
+          Get Your Practice in Front of Families Who Are Ready to Choose
         </h1>
         <p className="max-w-3xl text-sm text-slate-600">
-          AutoRepairDirectories.com is visited by drivers actively searching for
-          auto repair options across the United States. A featured listing puts
-          your shop at the top of your city section and in front of
-          high-intent visitors at the moment they are choosing a repair service.
+          SpeechTherapistDirectories.com is visited by Families actively searching for
+          speech therapy/pathology options across the United States. A featured listing puts
+          your practice at the top of your city section and in front of
+          high-intent visitors at the moment they are choosing a speech therapy/pathology service.
         </p>
       </header>
 
@@ -102,7 +102,7 @@ export default function AdvertisePage() {
           <ul className="mt-4 list-disc space-y-2 pl-5 text-sm text-slate-600">
             <li>Everything in Featured</li>
             <li>Included in the Featured Shops section on the homepage</li>
-            <li>Your shop logo or photo displayed</li>
+            <li>Your practice logo or photo displayed</li>
             <li>Custom tagline (up to 60 words)</li>
             <li>Cancel anytime</li>
           </ul>
@@ -121,10 +121,10 @@ export default function AdvertisePage() {
         <p className="text-sm text-slate-700">
           To get started or ask questions, contact us at{" "}
           <a
-            href="mailto:support@autorepairdirectories.com"
+            href="mailto:support@SpeechTherapistDirectories.com"
             className="font-medium text-teal underline underline-offset-2 hover:text-teal-soft"
           >
-            support@autorepairdirectories.com
+            support@SpeechTherapistDirectories.com
           </a>{" "}
           — we&apos;ll have your listing live within 24 hours.
         </p>

@@ -8,7 +8,7 @@ export default function robots(): MetadataRoute.Robots {
         allow: "/",
       },
     ],
-    sitemap: "https://autorepairdirectories.com/sitemap.xml",
+    sitemap: "https://speechtherapydirectories.com/sitemap.xml",
   };
 }
 

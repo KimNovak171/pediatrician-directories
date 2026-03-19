@@ -9,11 +9,11 @@ export function ContactForm() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const subject = encodeURIComponent(`Contact from Auto Repair Directories: ${name}`);
+    const subject = encodeURIComponent(`Contact from Speech Therapy Directories: ${name}`);
     const body = encodeURIComponent(
       `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`
     );
-    window.location.href = `mailto:support@autorepairdirectories.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:support@speechtherapydirectories.com?subject=${subject}&body=${body}`;
   };
 
   return (

@@ -6,7 +6,7 @@ import {
   getProvinceSummary,
 } from "@/lib/canadaFacilities";
 
-const siteUrl = "https://autorepairdirectories.com";
+const siteUrl = "https://speechtherapydirectories.com";
 
 type ProvincePageProps = {
   params: Promise<{ provinceSlug: string }>;
@@ -23,8 +23,8 @@ export async function generateMetadata({
     safeSlug,
   );
 
-  const title = `Auto Repair Shops in ${provinceName}, Canada | Auto Repair Directories`;
-  const descriptor = `Find ${totalFacilities.toLocaleString()} auto repair shops in ${provinceName}, Canada. Compare services and shop details. Verified listings with ratings and reviews.`;
+  const title = `Speech Therapy Shops in ${provinceName}, Canada | Speech Therapy Directories`;
+  const descriptor = `Find ${totalFacilities.toLocaleString()} speech therapy practices in ${provinceName}, Canada. Compare services and practice details. Verified listings with ratings and reviews.`;
 
   return {
     title,
@@ -36,14 +36,14 @@ export async function generateMetadata({
       title,
       description: descriptor,
       url: canonicalPath,
-      siteName: "AutoRepairDirectories.com",
+      siteName: "SpeechTherapyDirectories.com",
       type: "website",
       images: [
         {
           url: "/og-image.svg",
           width: 1200,
           height: 630,
-          alt: `${provinceName} auto repair shop directory preview`,
+          alt: `${provinceName} speech therapy practice directory preview`,
         },
       ],
     },
@@ -69,10 +69,10 @@ export default async function ProvincePage({ params }: ProvincePageProps) {
 
   const careTypesText = (
     [
-      "brake repair",
-      "engine service",
-      "transmission repair",
-      "tire service",
+      "speech evaluation",
+      "language support",
+      "fluency therapy",
+      "feeding support",
     ] as const
   ).join(", ");
   const majorCities = [...cities]
@@ -86,7 +86,7 @@ export default async function ProvincePage({ params }: ProvincePageProps) {
   const careTypesSentence =
     topCareTypes.length > 0
       ? topCareTypes.join(", ")
-      : "brake repair, engine service, transmission repair, and tire service";
+      : "speech evaluation, language support, fluency therapy, and feeding support";
 
   const breadcrumbSchema = {
     "@context": "https://schema.org",
@@ -95,7 +95,7 @@ export default async function ProvincePage({ params }: ProvincePageProps) {
       {
         "@type": "ListItem",
         position: 1,
-        name: "AutoRepairDirectories.com",
+        name: "SpeechTherapyDirectories.com",
         item: `${siteUrl}/`,
       },
       {
@@ -119,7 +119,7 @@ export default async function ProvincePage({ params }: ProvincePageProps) {
     mainEntity: [
       {
         "@type": "Question",
-        name: `How many auto repair shops are in ${provinceName}?`,
+        name: `How many speech therapy practices are in ${provinceName}?`,
         acceptedAnswer: {
           "@type": "Answer",
           text: `Our directory lists ${totalFacilities.toLocaleString()} verified facilities across ${cities.length.toLocaleString()} cities.`,
@@ -127,7 +127,7 @@ export default async function ProvincePage({ params }: ProvincePageProps) {
       },
       {
         "@type": "Question",
-        name: `What types of auto repair services are available in ${provinceName}?`,
+        name: `What types of speech therapy services are available in ${provinceName}?`,
         acceptedAnswer: {
           "@type": "Answer",
           text: `${careTypesSentence}.`,
@@ -135,10 +135,10 @@ export default async function ProvincePage({ params }: ProvincePageProps) {
       },
       {
         "@type": "Question",
-        name: "How are shops selected for this directory?",
+        name: "How are practices selected for this directory?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "All shops are sourced from Google Maps, verified, and must have a minimum 3-star rating.",
+          text: "All practices are sourced from Google Maps, verified, and must have a minimum 3-star rating.",
         },
       },
     ],
@@ -147,19 +147,19 @@ export default async function ProvincePage({ params }: ProvincePageProps) {
   const webpageSchema = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    name: `Auto Repair Shops in ${provinceName}, Canada`,
+    name: `Speech Therapy Shops in ${provinceName}, Canada`,
     url: `${siteUrl}/canada/${resolvedProvinceSlug}`,
     isPartOf: {
       "@type": "WebSite",
-      name: "AutoRepairDirectories.com",
+      name: "SpeechTherapyDirectories.com",
       url: `${siteUrl}/`,
     },
     about: [
-      { "@type": "Thing", name: `${provinceName} auto repair shops` },
-      { "@type": "Thing", name: "Brake repair" },
-      { "@type": "Thing", name: "Engine service" },
-      { "@type": "Thing", name: "Transmission repair" },
-      { "@type": "Thing", name: "Tire service" },
+      { "@type": "Thing", name: `${provinceName} speech therapy practices` },
+      { "@type": "Thing", name: "Speech evaluation" },
+      { "@type": "Thing", name: "Language support" },
+      { "@type": "Thing", name: "Fluency therapy" },
+      { "@type": "Thing", name: "Feeding support" },
     ],
     speakable: {
       "@type": "SpeakableSpecification",
@@ -194,14 +194,14 @@ export default async function ProvincePage({ params }: ProvincePageProps) {
         className="mb-4 flex items-center justify-center gap-2 rounded-full bg-teal px-5 py-3 text-center text-sm font-semibold text-white shadow-md transition hover:bg-teal-soft focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal focus-visible:ring-offset-2"
         aria-label="View featured listing pricing and benefits"
       >
-        Get your shop featured — view pricing &amp; benefits →
+        Get your practice featured — view pricing &amp; benefits →
       </Link>
       <section className="rounded-2xl bg-surface-muted px-5 py-6 text-foreground shadow-lg shadow-navy/10 ring-1 ring-gold/40 sm:px-8 sm:py-8">
         <p className="text-xs font-semibold uppercase tracking-[0.2em] text-gold-soft">
           Province overview
         </p>
         <h1 className="mt-2 text-3xl font-semibold sm:text-4xl">
-          Auto Repair Shops in {provinceName}, Canada
+          Speech Therapy Shops in {provinceName}, Canada
         </h1>
         <p className="mt-3 max-w-2xl text-sm text-foreground/80">
           Explore {careTypesText} across {provinceName}, including major city
@@ -251,7 +251,7 @@ export default async function ProvincePage({ params }: ProvincePageProps) {
               Top Picks in {provinceName}
             </h2>
             <p className="text-sm text-slate-600">
-              Featured shops in {provinceName} — verified listings with
+              Featured practices in {provinceName} — verified listings with
               priority placement.
             </p>
             <div className="mt-4 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
@@ -267,11 +267,11 @@ export default async function ProvincePage({ params }: ProvincePageProps) {
         <div className="flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
           <div>
             <h2 className="text-sm font-semibold uppercase tracking-[0.18em] text-navy border-b-2 border-teal/50 pb-1 inline-block">
-              Auto Repair Shops by City in {provinceName}
+              Speech Therapy Shops by City in {provinceName}
             </h2>
             <p className="mt-1 max-w-2xl text-sm text-slate-600">
-              Choose a city to view all listed auto repair shops, including
-              common services like brake repair, engine service, and tire
+              Choose a city to view all listed speech therapy practices, including
+              common services like speech evaluation, language support, and tire
               service.
             </p>
           </div>
@@ -284,8 +284,8 @@ export default async function ProvincePage({ params }: ProvincePageProps) {
 
         {cities.length === 0 ? (
           <p className="text-sm text-slate-600">
-            We don&apos;t have shops listed for {provinceName} yet. As new data
-            becomes available, cities and shops will appear here.
+            We don&apos;t have practices listed for {provinceName} yet. As new data
+            becomes available, cities and practices will appear here.
           </p>
         ) : (
           <div className="mt-4 grid gap-3 sm:grid-cols-2 md:grid-cols-3">
@@ -299,7 +299,7 @@ export default async function ProvincePage({ params }: ProvincePageProps) {
                   <span className="font-medium">{city.cityName}</span>
                   <span className="text-xs text-slate-600 group-hover:text-navy/85">
                     {city.facilityCount.toLocaleString()}{" "}
-                    {city.facilityCount === 1 ? "shop" : "shops"}
+                    {city.facilityCount === 1 ? "practice" : "practices"}
                   </span>
                 </div>
                 {city.averageRating ? (
