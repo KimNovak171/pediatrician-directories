@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Fort Smith Social Services Centre",
+    "care_type": "Speech pathologist",
+    "address": "41 Breynat St, Fort Smith, NT X0E 0P0",
+    "city": "Fort Smith",
+    "province": "Northwest Territories",
+    "province_code": "NT",
+    "country": "Canada",
+    "phone": "867-872-6300",
+    "website": "https://www.nthssa.ca/en/fort-smith-region",
+    "rating": 5.0,
+    "reviews": 1,
+    "recommended": true,
+    "place_id": "ChIJJ4aSLhaJyVMRqH5AQYzLhe4",
+    "reviews_link": "https://search.google.com/local/reviews?placeid=ChIJJ4aSLhaJyVMRqH5AQYzLhe4&q=*&authuser=0&hl=en&gl=CA"
+  },
+  {
+    "name": "Sahtú Got'iné Regional Health and Social Services Centre",
+    "care_type": "Speech pathologist",
+    "address": "26 Woodland Ave, Norman Wells, NT X0E 0V0",
+    "city": "Norman Wells",
+    "province": "Northwest Territories",
+    "province_code": "NT",
+    "country": "Canada",
+    "phone": "867-587-3333",
+    "website": "https://www.nthssa.ca/en/contact-information/sahtu%25CC%2581-gotin%25C3%25A9-regional-health-and-social-services-centre",
+    "rating": 5.0,
+    "reviews": 3,
+    "recommended": true,
+    "place_id": "ChIJi22py9ldZlERS0yUbxBvNbk",
+    "reviews_link": "https://search.google.com/local/reviews?placeid=ChIJi22py9ldZlERS0yUbxBvNbk&q=*&authuser=0&hl=en&gl=CA"
+  },
+  {
+    "name": "YKPT- Yellowknife Physiotherapy Sport & Rehab Clinic",
+    "care_type": "Physiotherapist",
+    "address": "4903 47 St, Yellowknife, NT X1A 2P5",
+    "city": "Yellowknife",
+    "province": "Northwest Territories",
+    "province_code": "NT",
+    "country": "Canada",
+    "phone": "867-920-4920",
+    "website": "https://www.ykpt.ca/",
+    "rating": 4.9,
+    "reviews": 131,
+    "recommended": true,
+    "place_id": "ChIJd8zhlsP20VMRBEpMqalT8iY",
+    "reviews_link": "https://search.google.com/local/reviews?placeid=ChIJd8zhlsP20VMRBEpMqalT8iY&q=*&authuser=0&hl=en&gl=CA"
+  }
+]
