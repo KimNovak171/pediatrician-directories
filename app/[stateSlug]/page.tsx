@@ -223,7 +223,7 @@ export default async function StatePage({ params }: StatePageProps) {
           >
             official {stateName} speech therapy consumer resources
           </a>{" "}
-          for licensing, inspections, and consumer support.
+          for finding qualified practitioners and understanding your options.
         </p>
 
         <div className="mt-5 grid gap-4 text-sm sm:grid-cols-3">
