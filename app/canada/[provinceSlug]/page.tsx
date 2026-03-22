@@ -69,10 +69,10 @@ export default async function ProvincePage({ params }: ProvincePageProps) {
 
   const careTypesText = (
     [
-      "speech evaluation",
-      "language support",
-      "fluency therapy",
-      "feeding support",
+      "functional assessment",
+      "daily living skills",
+      "sensory integration",
+      "cognitive rehabilitation",
     ] as const
   ).join(", ");
   const majorCities = [...cities]
@@ -86,7 +86,7 @@ export default async function ProvincePage({ params }: ProvincePageProps) {
   const careTypesSentence =
     topCareTypes.length > 0
       ? topCareTypes.join(", ")
-      : "speech evaluation, language support, fluency therapy, and feeding support";
+      : "fine motor skills, daily living skills, sensory integration, and cognitive rehabilitation";
 
   const breadcrumbSchema = {
     "@context": "https://schema.org",
@@ -156,10 +156,10 @@ export default async function ProvincePage({ params }: ProvincePageProps) {
     },
     about: [
       { "@type": "Thing", name: `${provinceName} occupational therapy practices` },
-      { "@type": "Thing", name: "Speech evaluation" },
-      { "@type": "Thing", name: "Language support" },
-      { "@type": "Thing", name: "Fluency therapy" },
-      { "@type": "Thing", name: "Feeding support" },
+      { "@type": "Thing", name: "Functional assessment" },
+      { "@type": "Thing", name: "Daily living skills" },
+      { "@type": "Thing", name: "Sensory integration" },
+      { "@type": "Thing", name: "Cognitive rehabilitation" },
     ],
     speakable: {
       "@type": "SpeakableSpecification",
@@ -271,8 +271,8 @@ export default async function ProvincePage({ params }: ProvincePageProps) {
             </h2>
             <p className="mt-1 max-w-2xl text-sm text-slate-600">
               Choose a city to view all listed occupational therapy practices, including
-              common services like speech evaluation, language support, and fluency
-              therapy.
+              common services like functional assessment, daily living skills, and sensory
+              integration.
             </p>
           </div>
           <div className="text-xs text-slate-500">

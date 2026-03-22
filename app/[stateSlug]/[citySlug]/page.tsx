@@ -149,19 +149,19 @@ export default async function CityPage({ params }: CityPageProps) {
       },
       {
         "@type": "Thing",
-        name: "Speech evaluation",
+        name: "Functional assessment",
       },
       {
         "@type": "Thing",
-        name: "Language support",
+        name: "Daily living skills",
       },
       {
         "@type": "Thing",
-        name: "Fluency therapy",
+        name: "Sensory integration",
       },
       {
         "@type": "Thing",
-        name: "Feeding support",
+        name: "Cognitive rehabilitation",
       },
     ],
     speakable: {

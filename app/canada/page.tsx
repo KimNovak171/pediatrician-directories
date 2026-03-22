@@ -7,14 +7,14 @@ const siteUrl = "https://occupationaltherapydirectories.com";
 export const metadata: Metadata = {
   title: "Occupational Therapy Practices in Canada | Provincial Directories | Occupational Therapy Directories",
   description:
-    "Browse verified occupational therapy practices across Canadian provinces. speech evaluations, articulation therapy, language support, and more — all rated 3 stars or higher.",
+    "Browse verified occupational therapy practices across Canadian provinces. fine motor skills, sensory processing, daily living activities, and more — all rated 3 stars or higher.",
   alternates: {
     canonical: "/canada",
   },
   openGraph: {
     title: "Occupational Therapy Practices in Canada | Provincial Directories | Occupational Therapy Directories",
     description:
-      "Browse verified occupational therapy practices across Canadian provinces. speech evaluations, articulation therapy, language support, and more.",
+      "Browse verified occupational therapy practices across Canadian provinces. fine motor skills, sensory processing, daily living activities, and more.",
     url: "/canada",
     siteName: "OccupationalTherapyDirectories.com",
     type: "website",

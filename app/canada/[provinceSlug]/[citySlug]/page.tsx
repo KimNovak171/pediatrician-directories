@@ -140,9 +140,9 @@ export default async function CanadaCityPage({ params }: CanadaCityPageProps) {
     about: [
       { "@type": "Thing", name: `${cityName} occupational therapy practices` },
       { "@type": "Thing", name: `${provinceName} occupational therapy services` },
-      { "@type": "Thing", name: "Speech evaluation" },
-      { "@type": "Thing", name: "Language support" },
-      { "@type": "Thing", name: "Fluency therapy" },
+      { "@type": "Thing", name: "Functional assessment" },
+      { "@type": "Thing", name: "Daily living skills" },
+      { "@type": "Thing", name: "Sensory integration" },
     ],
     speakable: {
       "@type": "SpeakableSpecification",

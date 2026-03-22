@@ -27,7 +27,7 @@ export async function generateMetadata({
 
   const title = `Occupational Therapy Practices in ${stateName} | ${totalFacilities.toLocaleString()} Verified Practices | OccupationalTherapyDirectories.com`;
 
-  const descriptor = `Browse ${totalFacilities.toLocaleString()} verified occupational therapy practices across ${cities.length.toLocaleString()} ${stateName} cities. speech evaluations, articulation therapy, language support, and more — all rated 3 stars or higher.`;
+  const descriptor = `Browse ${totalFacilities.toLocaleString()} verified occupational therapy practices across ${cities.length.toLocaleString()} ${stateName} cities. fine motor skills, sensory processing, daily living activities, and more — all rated 3 stars or higher.`;
 
   return {
     title,
@@ -73,7 +73,7 @@ export default async function StatePage({ params }: StatePageProps) {
     careTypes,
   } = await getStateSummary(stateSlug ?? "");
   const resourcesUrl = getStateResourcesUrl(resolvedStateSlug);
-  const careTypesText = (["speech evaluation", "language support", "fluency therapy", "feeding support"] as const).join(", ");
+  const careTypesText = (["functional assessment", "daily living skills", "sensory integration", "cognitive rehabilitation"] as const).join(", ");
   const majorCities = [...cities]
     .sort((a, b) => b.facilityCount - a.facilityCount)
     .slice(0, 6)
@@ -85,7 +85,7 @@ export default async function StatePage({ params }: StatePageProps) {
   const careTypesSentence =
     topCareTypes.length > 0
       ? topCareTypes.join(", ")
-      : "speech evaluation, language support, fluency therapy, and feeding support";
+      : "fine motor skills, daily living skills, sensory integration, and cognitive rehabilitation";
 
   const breadcrumbSchema = {
     "@context": "https://schema.org",
@@ -154,19 +154,19 @@ export default async function StatePage({ params }: StatePageProps) {
       },
       {
         "@type": "Thing",
-        name: "Speech evaluation",
+        name: "Functional assessment",
       },
       {
         "@type": "Thing",
-        name: "Language support",
+        name: "Daily living skills",
       },
       {
         "@type": "Thing",
-        name: "Fluency therapy",
+        name: "Sensory integration",
       },
       {
         "@type": "Thing",
-        name: "Feeding support",
+        name: "Cognitive rehabilitation",
       },
     ],
     speakable: {
@@ -287,8 +287,8 @@ export default async function StatePage({ params }: StatePageProps) {
             </h2>
             <p className="mt-1 max-w-2xl text-sm text-slate-600">
               Choose a city to view all listed occupational therapy practices, including
-              common services like speech evaluation, language support, and fluency
-              therapy.
+              common services like functional assessment, daily living skills, and sensory
+              integration.
             </p>
           </div>
           <div className="text-xs text-slate-500">
