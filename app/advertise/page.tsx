@@ -8,13 +8,13 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/advertise",
     languages: {
-      "en-us": "https://OccupationalTherapyDirectories.com/advertise",
+      "en-us": "https://occupationaltherapydirectories.com/advertise",
     },
   },
   openGraph: {
     title: "Advertise | Get Your Occupational Therapy Practice in Front of Families",
     description:
-      "A featured listing puts your practice at the top of your city directory section and in front of high-intent visitors at the moment they are choosing an occupational therapy/pathology service.",
+      "A featured listing puts your practice at the top of your city directory section and in front of high-intent visitors at the moment they are choosing an occupational therapy service.",
     url: "/advertise",
     siteName: "OccupationalTherapyDirectories.com",
     type: "website",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   },
 };
 
-const siteUrl = "https://OccupationalTherapyDirectories.com";
+const siteUrl = "https://occupationaltherapydirectories.com";
 const STRIPE_LINK_49 = "https://buy.stripe.com/dRmcN58Ui9LNccmg5XfAc06";
 const STRIPE_LINK_99 = "https://buy.stripe.com/5kQ5kD5I66zBa4e6vnfAc07";
 
@@ -69,9 +69,9 @@ export default function AdvertisePage() {
         </h1>
         <p className="max-w-3xl text-sm text-slate-600">
           OccupationalTherapyDirectories.com is visited by Families actively searching for
-          occupational therapy/pathology options across the United States. A featured listing puts
+          occupational therapy options across the United States. A featured listing puts
           your practice at the top of your city directory section and in front of
-          high-intent visitors at the moment they are choosing an occupational therapy/pathology service.
+          high-intent visitors at the moment they are choosing an occupational therapy service.
         </p>
       </header>
 
@@ -121,10 +121,10 @@ export default function AdvertisePage() {
         <p className="text-sm text-slate-700">
           To get started or ask questions, contact us at{" "}
           <a
-            href="mailto:support@OccupationalTherapyDirectories.com"
+            href="mailto:support@occupationaltherapydirectories.com"
             className="font-medium text-teal underline underline-offset-2 hover:text-teal-soft"
           >
-            support@OccupationalTherapyDirectories.com
+            support@occupationaltherapydirectories.com
           </a>{" "}
           — we&apos;ll have your listing live within 24 hours.
         </p>
