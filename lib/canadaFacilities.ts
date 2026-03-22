@@ -302,6 +302,28 @@ const PROVINCE_DATA: Record<string, CanadaRawFacility[]> = {
   yukon: yukonFacilities,
 };
 
+/** Sync totals for homepage / global stats (US module aggregates with this). */
+export function getCanadaStatsForGlobal(): {
+  totalFacilities: number;
+  totalCities: number;
+  ratings: number[];
+} {
+  const cityKeys = new Set<string>();
+  const ratings: number[] = [];
+  let totalFacilities = 0;
+  for (const [provinceSlug, facilities] of Object.entries(PROVINCE_DATA)) {
+    totalFacilities += facilities.length;
+    for (const f of facilities) {
+      cityKeys.add(`${provinceSlug}:${f.citySlug}`);
+      const r = f.rating;
+      if (typeof r === "number" && !Number.isNaN(r) && r > 0) {
+        ratings.push(r);
+      }
+    }
+  }
+  return { totalFacilities, totalCities: cityKeys.size, ratings };
+}
+
 const PROVINCE_DISPLAY_NAMES: Record<string, string> = {
   alberta: "Alberta",
   "british-columbia": "British Columbia",
