@@ -5,7 +5,7 @@ import { ContactForm } from "./ContactForm";
 export const metadata: Metadata = {
   title: "Contact Us | Pediatrician Directories",
   description:
-    "Get in touch with PediatricianDirectories.com. Send a message or email support@pediatriciandirectories.com for questions about our directory or featured listings.",
+    "Get in touch with PediatricianDirectories.com. Send a message or email hello@directoriesnetwork.com for questions about our directory or featured listings.",
   alternates: {
     canonical: "/contact",
     languages: {
@@ -52,10 +52,10 @@ export default function ContactPage() {
           Have a question about our directory, a listing, or featured placement?
           Use the form below or email us directly at{" "}
           <a
-            href="mailto:support@pediatriciandirectories.com"
+            href="mailto:hello@directoriesnetwork.com"
             className="font-medium text-teal underline underline-offset-2 hover:text-teal-soft"
           >
-            support@pediatriciandirectories.com
+            hello@directoriesnetwork.com
           </a>
           .
         </p>
@@ -69,10 +69,10 @@ export default function ContactPage() {
         <p className="text-sm font-medium text-navy">Email us directly</p>
         <p className="mt-1 text-sm text-slate-700">
           <a
-            href="mailto:support@pediatriciandirectories.com"
+            href="mailto:hello@directoriesnetwork.com"
             className="font-medium text-teal underline underline-offset-2 hover:text-teal-soft"
           >
-            support@pediatriciandirectories.com
+            hello@directoriesnetwork.com
           </a>
         </p>
       </section>

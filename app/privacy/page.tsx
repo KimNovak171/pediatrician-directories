@@ -53,7 +53,7 @@ export default function PrivacyPage() {
 
           <h2 className="text-lg font-semibold text-navy">4. Directory Listings and Public Information</h2>
           <p>
-            Our directory displays information about pediatrician practices that we obtain from public sources (such as Google Maps) or that is provided by practice owners. Listing details (e.g., name, address, phone, website) are shown to help users compare options. If you are a practice owner and wish to update or remove your listing, contact us at support@pediatriciandirectories.com.
+            Our directory displays information about pediatrician practices that we obtain from public sources (such as Google Maps) or that is provided by practice owners. Listing details (e.g., name, address, phone, website) are shown to help users compare options. If you are a practice owner and wish to update or remove your listing, contact us at hello@directoriesnetwork.com.
           </p>
 
           <h2 className="text-lg font-semibold text-navy">5. Cookies and Tracking</h2>
@@ -73,7 +73,7 @@ export default function PrivacyPage() {
 
           <h2 className="text-lg font-semibold text-navy">8. Your Rights and Choices</h2>
           <p>
-            Depending on your location, you may have the right to access, correct, or delete your personal information, or to object to or restrict certain processing. To exercise these rights or ask questions about your data, contact us at support@pediatriciandirectories.com.
+            Depending on your location, you may have the right to access, correct, or delete your personal information, or to object to or restrict certain processing. To exercise these rights or ask questions about your data, contact us at hello@directoriesnetwork.com.
           </p>
 
           <h2 className="text-lg font-semibold text-navy">9. Children&apos;s Privacy</h2>
@@ -89,8 +89,8 @@ export default function PrivacyPage() {
           <h2 className="text-lg font-semibold text-navy">11. Contact Us</h2>
           <p>
             For questions about this Privacy Policy or our practices, contact us at{" "}
-            <a href="mailto:support@pediatriciandirectories.com" className="text-teal hover:underline">
-              support@pediatriciandirectories.com
+            <a href="mailto:hello@directoriesnetwork.com" className="text-teal hover:underline">
+              hello@directoriesnetwork.com
             </a>
             .
           </p>
