@@ -4,6 +4,8 @@ import { getDirectoryIndex } from "@/lib/stateFacilities";
 
 const siteUrl = "https://pediatriciandirectories.com";
 
+export const dynamic = "force-static";
+
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const now = new Date();
   const [directory, canadaDirectory] = await Promise.all([
